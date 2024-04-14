@@ -1,0 +1,12 @@
+#cameral projection center distance to dobot endeffector offset
+cameral_distance_x: 0.0350000
+cameral_distance_y: 0.000
+
+release_num: 21
+
+release_offset_x: 0.03
+release_offset_y: 0.02
+
+#cameral fix titl cause Height error,Observer hight decline 1mm,x,y will  offset some mm
+Observer_hight_offset_x: 0.0 #-0.16107
+Observer_hight_offset_y: 0.0 #0.1616

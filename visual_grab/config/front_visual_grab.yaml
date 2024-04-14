@@ -1,0 +1,9 @@
+#cameral projection center distance to dobot endeffector offset
+cameral_distance_x: -0.018000
+cameral_distance_y: 0.0300
+
+release_num: 21
+
+release_offset_x: 0.03
+release_offset_y: 0.02
+

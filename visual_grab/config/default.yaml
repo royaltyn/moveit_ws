@@ -1,0 +1,4 @@
+observer_pose: [0.00,-256.00,134.00,0.01]
+home_pose: [0.00,258.00,121.00,0.02]
+robotReleasePose: [3.30,208.50,-36.10,0.00]
+target_height:-41.00

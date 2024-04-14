@@ -1,0 +1,20 @@
+<launch>
+    <include file="$(find probot_vision)/launch/usb_cam_in_hand.launch"/>
+    <include file="$(find probot_vision)/launch/usb_cam2.launch"/>
+    
+    <include file="$(find dobot)/launch/DobotServer.launch"/>
+    <node name="image_correct" pkg="probot_vision" type="image_correct" output="screen" />
+    
+    <include file="$(find apriltag_ros)/launch/continuous_detection.launch"/>
+    <node name="cameral_point_to_dobot_tf" pkg="apriltag_ros" type="apriltag_ros_static_cameral_point_to_dobot" output="screen" />
+    
+    <node name="cameral_to_dobot_tf" pkg="visual_grab" type="cameral_to_dobot_tf" output="screen" />
+   
+    <node name="execute_move_and_grab" pkg="visual_grab" type="execute_move_and_grab" output="screen" />
+    <node name="execute_grab" pkg="visual_grab" type="execute_grab" output="screen" />
+   
+    <node name="rosStudio_dobot_grab" pkg="visual_grab" type="rosStudio_dobot_grab" output="screen" />
+   
+    <rosparam file="$(find visual_grab)/config/visual_grab.yaml" command="load" />
+    
+</launch>

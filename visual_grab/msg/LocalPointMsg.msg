@@ -1,0 +1,2 @@
+string localName
+geometry_msgs/PointStamped pose
